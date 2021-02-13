@@ -41,69 +41,9 @@ nav {
 	margin-top: 70px;
 }
 
-.toggle {
-	position: absolute;
-	top: 1.2rem;
-	right: 1rem;
-	display: none;
-	flex-direction: column;
-	justify-content: space-between;
-	width: 30px;
-	height: 20px;
-}
-
-.toggle .line {
-	height: 3px;
-	width: 100%;
-	background-color: #fff;
-	border-radius: 10px;
-}
-
-@media (max-width: 600px) {
-	.toggle {
-		display: flex;
-	}
-	.nav-links {
-		display: none;
-		width: 100%;
-	}
-	.navbar {
-		flex-direction: column;
-		align-items: flex-start;
-	}
-	.nav-links ul {
-		flex-direction: column;
-		width: 100%;
-	}
-
-	.nav-links li {
-		text-align: center;
-	}
-	.nav-links li a {
-		padding: 0.8rem 1rem;
-	}
-
-	.nav-links.active {
-		display: flex;
-	}
-}
-
 body {
 	font-family: sans-serif;
 	background: rgb(39, 39, 39);
-}
-
-.contact-item {
-	padding-top: 50px;
-}
-
-.contact-item a {
-	font-size: 70px;
-	padding: 15px;
-}
-
-section {
-	min-height: 100vh;
 }
 
 body h1 {
@@ -115,7 +55,7 @@ body h1 {
 	padding-right: 5%;
 	color: rgb(255, 255, 255);
 }
-
+/* 
 body h2 {
 	text-align: center;
 	font-family: 'Courier New', Courier, monospace;
@@ -137,7 +77,7 @@ body h3 a {
 	text-decoration: none;
 	font-weight: lighter;
 	color: rgb(255, 255, 255);
-}
+} */
 
 .container {
 	text-align: center;
@@ -178,76 +118,9 @@ body h3 a {
 li {
 	display: list-item;
 }
-.contact-list {
-	list-style: none;
-}
-
-.contact-link {
-	color: #fff;
-	text-decoration: none;
-	font-size: 30px;
-}
-
-.touch {
-	position: relative;
-	background: rgb(78, 78, 78);
-	justify-content: center;
-	align-items: center;
-	border-top: 1px solid rgb(219, 219, 219);
-}
-
-.touch::after {
-	content: '';
-	position: absolute;
-}
-
-.touch h1 {
-	margin-top: 0;
-	font-size: 30px;
-	padding-top: 20px;
-}
-
-form {
-	margin-top: 50px;
-	text-align: center;
-}
-
-.form-control {
-	width: 400px;
-	padding: 0.5rem 1rem;
-	border: 1px solid rgb(0, 0, 0);
-	outline: none;
-	border-bottom: 1px solid rgb(190, 190, 190);
-	border-radius: 6px;
-	color: rgb(0, 0, 0);
-	font-size: 18px;
-	margin-bottom: 16px;
-}
-
-textarea {
-	resize: none;
-}
 
 input {
 	height: 45px;
-}
-
-form .submit {
-	background: rgb(221, 70, 70);
-	color: rgb(255, 255, 255);
-	border: 2px solid rgb(221, 70, 70);
-	border-radius: 9px;
-	font-size: 20px;
-	font-weight: bold;
-	text-align: center;
-	width: 90px;
-}
-
-form .submit:hover {
-	background: none;
-	border-radius: 9px;
-	cursor: pointer;
-	transition: 0.2s;
 }
 
 footer {
@@ -258,16 +131,6 @@ footer {
 	color: rgb(190, 190, 190);
 	font-family: 'Courier New', Courier, monospace;
 	border-top: 1px solid rgb(190, 190, 190);
-}
-
-.footer-item {
-	margin-bottom: 20px;
-	font-size: 15px;
-}
-
-.footer-contact {
-	display: inline-block;
-	padding-right: 10px;
 }
 
 .footer-link {
