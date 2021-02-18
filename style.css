@@ -296,3 +296,12 @@ thead {
 	text-decoration: none;
 	font-weight: 750;
 }
+.node {
+	fill: #ccc;
+	stroke: #fff;
+	stroke-width: 2px;
+}
+.link {
+	stroke: #777;
+	stroke-width: 2px;
+}
