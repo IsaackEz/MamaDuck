@@ -124,6 +124,7 @@
 		}
 		
 		.historial {
+			margin-top: 50px;
 			text-align: center;
 		}
 		
@@ -141,17 +142,6 @@
 			background-color: rgb(49, 49, 49);
 		}
 		
-		#table2,
-		#home,
-		#menu {
-			margin: auto;
-			border: 0ch;
-		}
-		
-		#menu {
-			padding-left: 100px;
-		}
-		
 		.header-table {
 			color: black;
 		}
@@ -160,7 +150,7 @@
 			background-color: rgb(41, 166, 197);
 		}
 		
-		.nodos {
+		.nodes {
 			text-align: left;
 		}
 		
@@ -282,6 +272,33 @@
 			text-decoration: none;
 			font-weight: 750;
 		}
+		.nodos {
+			border: 3px solid rgb(0, 30, 163);
+			background: rgb(0, 30, 163);
+			padding: 3px 10px;
+			border-radius: 90px;
+			cursor: pointer;
+			font-size: 15px;
+			font-family: sans-serif;
+			transition: 0.4s;
+			margin: 1px;
+		}
+		
+		.nodos:focus {
+			outline: none;
+		}
+		
+		.nodos:active {
+			border: 3px solid rgb(1, 114, 190);
+			background: rgb(1, 114, 190);
+			transition: 0.1s;
+		}
+		
+		.nodos a {
+			color: rgb(252, 252, 252);
+			text-decoration: none;
+			font-weight: 750;
+		}
 		.node {
 			fill: #ccc;
 			stroke: #fff;
@@ -291,9 +308,42 @@
 			stroke: #777;
 			stroke-width: 2px;
 		}
+		.dot {
+			height: 10px;
+			width: 10px;
+			background-color: rgb(33, 141, 0);
+			border-radius: 50%;
+			display: inline-block;
+		}
+		.dot-bad {
+			height: 10px;
+			width: 10px;
+			background-color: rgb(141, 0, 0);
+			border-radius: 50%;
+			display: inline-block;
+		}
+		#table2,
+		#home,
+		#nodos {
+			margin: auto;
+			border: 0ch;
+		}
+		
+		#menu {
+			margin: auto;
+			border: 0ch;
+			padding-left: 100px;
+		}
 		
 	</style>
 	<body>
+		<header>
+			<nav class="navbar">
+				<a href="/" class="title"
+					>MAMA<span class="title-color">DUCK</span></a
+				>
+			</nav>
+		</header>
 		<div class="historial">
 			<table id="table">
 				<thead>
@@ -320,8 +370,15 @@
 						<td>Terremoto</td>
 						<td>Evacuacion</td>
 						<td>Atrapado debajo de un mueble</td>
-						<td rowspan="2" class="nodos">
-							Nodo Madre <br />Nodo 1 <br />Nodo 2
+						<td rowspan="2" class="nodes">
+							<span class="dot"></span>
+							Nodo Madre <br />
+							<span class="dot"></span> 
+							Nodo 1 <br />
+							<span class="dot"></span> 
+							Nodo 2 <br />
+							<span class="dot-bad"></span> 
+							Nodo 3
 						</td>
 					</tr>
 					<tr>
@@ -353,7 +410,7 @@
 			<table id="table2">
 				<tfoot>
 					<td id="home"><button class="home"><a href="/">Home</a></button></td>
-					<td id="menu"></td>
+					<td id="nodos"><button class="nodos"><a href="/Nodos">Nodos</a></button></td>
 					<td id="menu"></td>
 					<td id="menu"></td>
 					<td id="menu"></td>
